@@ -1,0 +1,95 @@
+
+
+	Lap trinh Python 
+
+
+
+// Tuple 
+	Tuple như một list, nhưng khác với list là tuple không thể 
+	thay đổi được các phần tử trong một tuple 
+	Một tuple thì các phần tử có thể hỗn tạp 
+	--> ()
+	vd tuple = (1,2,3)
+	print(tuple) 
+	--> (1,2,3)
+
+	* len: số phần tử trong tuple 
+	* truy cập vào các phần tử trong một tuple --> tương tự list 
+		vi_du = ("Python", "Javascript", "C++")
+		print(vi_du[0])
+		vi_du2 = ("Python", [100, 200, 300], (400, 500, 600))
+		print(vi_du2[1][2])
+		print(vi_du2[2][2])
+		Kết quả:
+		Python
+		300
+		600
+	* truy cập với chỉ số âm 
+		phần tử cuối cùng là -1 
+	* cắt và lấy tập con của tuple 
+	* duyệt qua các phần tử có trong tuple 
+		for x in tuple : 
+			pass
+	* các thao tác cơ bản trong tuple 
+		- thay đổi giá trị trong tuple: không thể thay đổi được, 
+		nhưng nếu thần tử của tuple lại là một kiểu dữ liệu có thay đổi được
+		có thể thay đổi được phần tử bên trong dữ liệu 
+		- xóa tập hợp tuple 
+			xóa toàn bộ tuple 
+			nếu muốn từng thành phần của tuple thì nên chuyển tuple 
+			thành một list sau đó thực hiện xóa, rồi gán lại vào 
+// Sap xep trong dictionary
+	m = sorted(m.items(), key = lambda x: (-x[1], x[0]))
+// Sap xep trong list 
+	m = sorted(m) 
+	m.sort()
+//  - Tra ve ma Unicode cua ky tu 
+
+	ord('A') --> 65 
+
+//  - Dao chuoi 
+
+	s2 = s1[::-1]
+
+//	- Cach nhap nhieu bien tren mot hang 
+
+	a,b,c = map(int,input().split())
+
+	[n , k] = [int(x) for x in input().split()] 
+
+    list = [int(x) for x in input().split()] 
+
+//	- Cac thao tac voi chuoi 
+	
+	Trong moi chuoi cua Python, cac ky tu duoc danh so tu 0 den n - 1 
+	hoac tu -n den -1 tu trai sang phai 
+	
+	VD
+	 0  1  2  3  4  5  6  7
+	 a  b  c  d     x  y  z
+	-8 -7 -6 -5 -4 -3 -2 -1  
+	
+	--> Truy cap den 1 phan tu trong chuoi 
+			a = "abcd xyz" 
+			a[0] = a
+	
+	--> Truy cap den nhieu phan tu trong chuoi 
+			<Ten_bien_chuoi>[<start>:<end>:<step>]
+			a[0,7,2] = ac y
+		Neu khong co step mac dinh bang 1 
+	
+	--> Dem chuoi con xuat hien trong chuoi 
+			
+			a = "Toe Toe Toe"
+			n = a.count("Toe") --> print(n) --> 3
+		Khong ghi mac dinh dem trong ca chuoi 
+			n = a.count("Toe",0,7) --> print(n) --> 2
+	
+//  - Mang 2 chieu 
+
+	[n,m] = [int(x) for x in input().split()]
+	a = [0]*n 
+	for i in range (n) : 
+		a[i] = [int(x) for x in input().split()]
+	
+			
