@@ -15,3 +15,4 @@ for i in s :
     a = i.lower().split() 
     a[0] = a[0].title() 
     print(' '.join(a) )
+    
